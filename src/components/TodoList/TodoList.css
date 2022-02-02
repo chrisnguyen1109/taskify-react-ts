@@ -1,0 +1,28 @@
+.todos {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 47.5%;
+    padding: 15px;
+    background-color: var(--primary-color);
+}
+
+.todos__heading {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+}
+
+.dragactive {
+    opacity: 0.8;
+}
+
+.dragcomplete {
+    background-color: rgb(235, 103, 80);
+    opacity: 0.8;
+}
+
+.remove {
+    background-color: rgb(235, 103, 80);
+}

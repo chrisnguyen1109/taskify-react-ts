@@ -1,0 +1,39 @@
+.todo__single {
+    display: flex;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 15px;
+    background-image: url('https://img.freepik.com/free-photo/crumpled-yellow-paper-background-close-up_60487-2390.jpg?size=626&ext=jpg');
+    transition: 0.2s;
+}
+.todo__single:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px black;
+    transform: scale(1.03);
+}
+.todo__single--text {
+    flex: 1;
+    padding: 5px;
+    border: none;
+    font-size: 20px;
+    min-width: 0;
+    word-break: break-all;
+}
+
+.todo__single--text:focus {
+    outline: none;
+}
+
+.drag {
+    box-shadow: 0 0 20px black;
+}
+
+.todo__single--icons {
+    display: flex;
+}
+
+.icon {
+    margin-left: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}

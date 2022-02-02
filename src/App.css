@@ -1,38 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
+:root {
+    --primary-color: #54cdc7;
+}
+
 .App {
-  text-align: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Neucha', cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.heading {
+    text-transform: uppercase;
+    font-size: 40px;
+    margin: 30px 0;
+    color: var(--primary-color);
+    z-index: 1;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@media (max-width: 800px) {
+    .heading {
+        margin: 15px 0;
+        font-size: 35px;
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media (max-width: 1100px) {
+    .todos {
+        width: 45% !important;
+    }
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media (max-width: 700px) {
+    .input {
+        width: 95%;
+    }
+    .container {
+        width: 95%;
+        flex-direction: column;
+    }
+    .todos {
+        width: 95% !important;
+        margin-bottom: 10px;
+    }
 }
